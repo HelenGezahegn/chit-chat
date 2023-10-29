@@ -1,16 +1,15 @@
-const express = require("express");
-const cors = require("cors");
+import express, { json, urlencoded } from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import authRoutes from "./routes/auth.js";
 
-const authRoutes = require("./routes/auth.js");
-
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-require("dotenv").config();
-
 app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(json());
+app.use(urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
