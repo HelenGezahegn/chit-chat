@@ -5,6 +5,9 @@ import ChannelListContainer from "./ChannelListContainer";
 import ResultsDropdown from "./ResultsDropdown";
 import TeamChannelList from "./TeamChannelList";
 import TeamChannelPreview from "./TeamChannelPreview";
+import ChannelInner from "./ChannelInner";
+import CreateChannel from "./CreateChannel";
+import EditChannel from "./EditChannel";
 
 export {
   Auth,
@@ -13,5 +16,8 @@ export {
   ChannelListContainer,
   ResultsDropdown,
   TeamChannelList,
-  TeamChannelPreview
+  TeamChannelPreview,
+  ChannelInner,
+  CreateChannel,
+  EditChannel,
 };
