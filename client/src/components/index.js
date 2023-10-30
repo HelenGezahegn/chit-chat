@@ -8,6 +8,7 @@ import TeamChannelPreview from "./TeamChannelPreview";
 import ChannelInner from "./ChannelInner";
 import CreateChannel from "./CreateChannel";
 import EditChannel from "./EditChannel";
+import UserList from "./UserList";
 
 export {
   Auth,
@@ -20,4 +21,5 @@ export {
   ChannelInner,
   CreateChannel,
   EditChannel,
+  UserList
 };
